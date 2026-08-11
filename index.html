@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Interativo - One Piece</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>One Piece</h1>
+        <nav>
+            <button id="toggle-theme">Alternar Tema</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção A: Contador -->
+        <section id="contador-section">
+            <h2>Contador de Likes</h2>
+            <h3 id="contador-valor">0</h3>
+            
+            <div class="controles">
+                <label for="passo-input">Passo:</label>
+                <input type="number" id="passo-input" value="1">
+                
+                <button id="btn-decrementar">-</button>
+                <button id="btn-incrementar">+</button>
+            </div>
+        </section>
+
+        <!-- Seção B: Galeria -->
+        <section id="galeria-section">
+            <h2>Galeria de Personagens</h2>
+            
+            <!-- Destaque grande -->
+            <div class="destaque">
+                <img id="imagem-destaque" src="" alt="Imagem em destaque">
+            </div>
+
+            <!-- Div que receberá as miniaturas no JS -->
+            <div id="miniaturas-container"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por <strong>Ulisses "Kakarato" Guimarães</strong></p>
+        <div class="footer-links">
+            <a href="https://www.linkedin.com/in/ulisses-guimaraes-/" target="_blank" rel="noopener noreferrer">
+                LinkedIn
+            </a>
+            <span>|</span>
+            <a href="https://github.com/uliguimaraes/" target="_blank" rel="noopener noreferrer">
+                GitHub
+            </a>
+        </div>
+        <p class="copyright">Dashboard One Piece &copy; 2026</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
